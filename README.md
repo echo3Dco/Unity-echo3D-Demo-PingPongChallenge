@@ -1,26 +1,29 @@
 # Unity-echo3D-Demo-PingPongChallenge
-
-## Version
-[Unity 2020.3.25f1](https://unity3d.com/get-unity/download/archive)
-
-## Register
-Don't have an echo3D API key? Make sure to register for FREE at [echo3D](https://console.echo3D.co/#/auth/register).
+Play this assymetrical game of ping pong with yourself or a friend.
 
 ## Setup
-* Clone this [repo](https://github.com/echo3Dco/Unity-echo3D-Demo-PingPongChallenge/).
-* [Install the echo3D Unity SDK](https://docs.echo3D.co/unity/installation).
-* [Add the assets](https://docs.echo3D.co/quickstart/add-a-3d-model) to the echo3D console from the Unity 'Models' folder.
-* Uncheck the [Security](https://docs.echo3d.co/web-console/deliver-pages/security-page) box in your console.
-* Open the _GameBoard_ scene.
-* Drag the echo3D script onto the Background object in the Hierarchy.
-* [Add the API key](https://docs.echo3D.co/unity/using-the-sdk) and entry ID for each object in the Inspector.
-![APIKeyandEntryId](https://user-images.githubusercontent.com/99516371/175661063-031a0d62-af0f-4335-be12-b73317527e54.png)
-![Hierarchy](https://user-images.githubusercontent.com/99516371/176975123-d7d543d4-59a6-47b0-b885-a9e55f75ba80.png)
+* Built with Unity 2020.3.25.  _(Note: The echo3D Unity SDK is supported in 2020.3.25 and higher.)_
+* Register for FREE at [echo3D](https://console.echo3D.co/#/auth/register).
+* [Add the Unity SDK](https://medium.com/r/?url=https%3A%2F%2Fdocs.echo3d.co%2Funity%2Finstallation). Troubleshoot [here](https://docs.echo3d.com/unity/troubleshooting#im-getting-a-newtonsoft.json.dll-error-in-unity).
+* Clone this repo. 
 
-* In the Hierarchy, make sure to the box is unchecked for the Sprite Renderer for Background
-* Press Play in Unity to see where the Background asset shows up in the scene so you can modify the [metadata](https://docs.echo3d.co/unity/transforming-content) in the console.
-* Adjust the [metadata](https://docs.echo3d.co/unity/transforming-content). These may work for you: <br>
-Background: scale: .1, zAngle: 180, xAngle: 90, x: .1
+
+## Setup
+* [Add these models](https://docs.echo3D.co/quickstart/add-a-3d-model) to the echo3D console from the Unity Assets/Models folder:  <br>
+      - Ball <br>
+* Open the _GameBoard_ scene.
+* [Set the API key](https://docs.echo3d.co/quickstart/access-the-console) and Entry IDs for those same models in the Inspector. <br>
+![APIKeyandEntryId](https://user-images.githubusercontent.com/99516371/195749269-f7a43477-b67a-49e8-a212-6abdb9c948fd.png)<br>
+![NEWAPIKeyandEntryID](https://user-images.githubusercontent.com/99516371/205407613-b746840f-8e8a-4ec8-b056-a680395dfab4.png)<br>
+* [Type your Secret Key](https://docs.echo3d.co/web-console/deliver-pages/security-page#secret-key) as the value for the parameter secKey in the file Packages/co.echo3D.unity/Runtime/Echo3DHologram.cs. _(Note: Secret Key only matters if you have the Security Key enabled). You can turn it off in the Security options in your echo3D console._
+![NEWSecKey2](https://user-images.githubusercontent.com/99516371/195749308-b2349a3b-7e43-4d3c-8f09-fbfa9d3cb0be.png)<br>
+* (Recommended) To move, resize or edit the assets live in your Scene view, check the boxes for “Editor Preview” and “Ignore Model Transforms”. To enable this, click Echo3D > Load Editor Holograms in your Unity toolbar. <br>
+![EditorPreviewAndIgnoreModelTransforms](https://user-images.githubusercontent.com/99516371/195749348-dc0b06ad-efa6-4dbd-962f-0119b5c33ea0.png)<br>
+![LoadHolograms](https://user-images.githubusercontent.com/99516371/195749354-b2295183-f877-444a-af22-ed87ffb17705.png) <br>
+
+
+
+
 
 ## Run
 Press Play in Unity. There are 2 player controllers: S and W for the left player, and the Up Arrow and Down Arrow for the right player.
