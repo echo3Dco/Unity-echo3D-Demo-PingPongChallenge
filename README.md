@@ -9,7 +9,7 @@ Play this assymetrical game of ping pong with yourself or a friend.
 
 
 ## Setup
-* [Add these models](https://docs.echo3D.co/quickstart/add-a-3d-model) to the echo3D console from the Unity Assets/Models folder:  <br>
+* [Add the model(s)](https://docs.echo3D.co/quickstart/add-a-3d-model) to the echo3D console from the Unity Assets/Models folder:  <br>
       - Ball <br>
 * Open the _GameBoard_ scene.
 * [Set the API key](https://docs.echo3d.co/quickstart/access-the-console) and Entry IDs for those same models in the Inspector. <br>
